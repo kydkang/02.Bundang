@@ -10,6 +10,6 @@ urlpatterns = [
     path('tag/<slug:tag_slug>', 
           views.post_by_tag, 
           name='post_by_tag'),
-    path('<int:pk>/', views.post_detail, name='post_detail'),
+    path('<int:pk>/<slug:post_slug>/', views.post_detail, name='post_detail'),
     path('', views.post_list, name='post_list'), 
 ]
