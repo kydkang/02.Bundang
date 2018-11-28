@@ -4,6 +4,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+    path('blog/', views.test_redirect, name='test_redirect'),
     path('category/<slug:category_slug>', 
           views.post_by_category, 
           name='post_by_category'),
